@@ -44,18 +44,16 @@ function skrypt_3()
 {
     var result="<hr>";
     var i=0;
-    var j=0;
-
     while(i<3)
     {
-        while(j<3)
+        var j=0;
+        while(j++<3)
         {
             result+=i+" "+j;
             result+="<br>";
-            j++;
         }
-        result+="<hr>";
         i++;
+        result+="<hr>";
     }
     document.querySelector(".main").innerHTML = result;
 }
@@ -89,18 +87,33 @@ result += "Ten napis się powtarza...";
 result += "<br />";
 i++;
 }
+document.querySelector(".main").innerHTML = result;
+}
 
 function skrypt_5()
 {
+    var result = "";
+    i = 0;
+    for(i; i<10; i++){
+    result += "Ten napis się powtarza...";
+    result += "<br />";
+    }
 
+    document.querySelector(".main_2").innerHTML = result;
 }
 
-document.querySelector(".main_2").innerHTML = result;
-
+function skrypt_6()
+{
+    var str = "<hr />";
+    for(i = 0; i < 3; i++){
+    for(j = 0; j < 3; j++){
+    str += i + " " + j;
+    str += "<br />";
+    }
+    str += "<hr />";
+    }
+    document.querySelector(".main_2").innerHTML = str;
 }
-
-
-
 
 
 function button_handler()
@@ -127,7 +140,12 @@ function button_handler()
 
     var b1_1 = document.querySelector(".b1_1");
     b1_1.addEventListener("click", function(){
-    skrypt_4();
+    skrypt_5();
+    });
+
+    var b1_2 = document.querySelector(".b1_2");
+    b1_2.addEventListener("click", function(){
+    skrypt_6();
     });
 
 
