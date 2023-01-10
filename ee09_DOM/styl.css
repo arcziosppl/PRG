@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+}
+
+.baner{
+    background-color: #287396;
+    text-align: center;
+    color: white;
+    height: 260px;
+    width: 100%;
+}
+
+.kluczyk{
+    float: left;
+}
+
+.auto{
+    float: right;
+}
+
+.baner a{
+    font-size: 40px;
+    color: red;
+    padding: 50px;
+}
+
+main{
+    display: flex;
+}
+
+.lewy{
+    background-color: #287396;
+    text-align: center;
+    color: white;
+    height: 600px;
+    width: 20%;
+    border-top: 1px solid white;
+}
+
+.lewy a{
+    text-decoration: none;
+    color: white;
+}
+
+.prawy{
+    background-color: #F7C43B;
+    text-align: center;
+    color:  #886829;
+    height: 600px;
+    width: 80%;
+}
+
+.prawy img{
+    width: 40%;
+    margin: 20px;
+}
+
+.stopka{
+    background-color: #287396;
+    text-align: center;
+    color: white;
+    display: flex;;
+}
+
+.stopka p{
+    margin: auto;
+}
+
+.panel_glowny{
+    background-color: #F7C43B;
+    color:  #886829;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+table{
+    width: 500px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+table td{
+    border: 1px solid black;
+}

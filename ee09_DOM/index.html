@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wypożyczalnia samochodów</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+<div class="baner">
+    <a>Wypożyczalnia Samochodów</a>
+    <img class="kluczyk" src="/media/kluczyk.png">
+    <img class="auto" src="/media/auto.png">
+</div>
+    </header>
+    <main>
+<div class="lewy">
+    <h2>Nasza flota</h2>
+    <button value="0"><img src="media/captur_mini.png" alt="auto1"></button>
+    <br>
+    <button value="1"><img src="media/leon_mini.png" alt="auto1"></button>
+    <br>
+    <button value="2"><img src="media/octavia_mini.png" alt="auto1"></button>
+    <br>
+    <button value="3"><img src="media/trafic_mini.png" alt="auto1"></button>
+    <hr>
+    <h2><a href="cennik.html">Cennik</a></h2>
+    <hr>
+</div>
+<div class="prawy">
+    <h1>Samochód</h1>
+    <p>Renault captur</p>
+    <img src="/media/captur.png" alt="foto">
+</div>
+    </main>
+    <footer>
+<div class="stopka"><p>Autor strony: <span style="font-style: italic;">000000000000</span></p></div>
+    </footer>
+
+    <script>
+    
+            const img_path = ["captur.png","leon.png","octavia.png","trafic.png"];
+            const img_title = ["Renault Captur","Seat Leon","Skoda Octavia","Renault Trafic"];
+            const img  = document.querySelector(".prawy img");
+            const title = document.querySelector(".prawy p");
+            const buttons = document.querySelectorAll("button");
+            buttons.forEach( el=>{
+               el.addEventListener("click", ()=>{
+                console.log(el.value);
+                img.src = "/media/" + img_path[el.value];
+                title.innerHTML = img_title[el.value];
+               });
+            });
+        
+    </script>
+</body>
+</html>
