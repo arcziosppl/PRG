@@ -1,0 +1,42 @@
+body,html{
+    font-family: Helvetica;
+    margin: 0;
+}
+
+.baner, footer{
+    background-color: #00838F;
+    color: white;
+    padding: 5px;
+    font-size: 130%;
+    text-align: center;
+    clear: both;
+}
+
+footer{
+    position: relative;
+    top: -150px;
+}
+
+.lewy1, .lewy2{
+    background-color: #EFEFEF;
+    width: 55%;
+    float: left;
+}
+
+.lewy1{
+    height: 150px;
+}
+
+.lewy2{
+    height: 300px;
+}
+
+.prawy{
+    background-color: #4FB3BF;
+    width: 45%;
+    height: 450px;
+    text-align: center;
+    float: right;
+    position: relative;
+    top: -150px;
+}
