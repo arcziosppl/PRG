@@ -1,0 +1,4 @@
+SELECT DATA,Godzina FROM `rezerwacje` GROUP BY Godzina;
+SELECT Miejsce,Rzad FROM `rezerwacje` WHERE Data="2022-08-09" AND Godzina="18:00:00";
+SELECT COUNT(Miejsce) as ilosc_miejsc FROM `rezerwacje` WHERE Data="2022-08-09" AND Godzina="18:00:00";
+SELECT rezerwacje.Rzad,rezerwacje.Miejsce,rezerwacje.Data,rezerwacje.Godzina FROM rezerwacje JOIN kasjerzy ON kasjerzy.Id=rezerwacje.Id_kasjera AND kasjerzy.Imie="Jan" AND kasjerzy.Nazwisko="Bednarski";
